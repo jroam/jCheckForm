@@ -6,7 +6,11 @@
 内置类型 int * str float email tel phone  url  可以是正则表达式
 循环检查，如果第一个不通过就返回false 全部通过返回true
 
+<<<<<<< HEAD
 主要是用:$("#form_add").jcheckform() 来验证
+=======
+主要是用:$("#form_add").jroamCheckform() 来验证
+>>>>>>> parent of 4245728... 修改验证函数
 用法示例:
 $("#btn_add").click(function(){
 			if($("#form_add").joramCheckform()){
@@ -20,7 +24,7 @@ $("#btn_add").click(function(){
 
 ;(function($){
 	$.fn.extend({
-		jcheckform:function(optionss){
+		jroamCheckform:function(optionss){
 			var _self=$(this);
 			//初始化参数
 			var optionss=$.extend({
