@@ -5,6 +5,9 @@
 
 内置类型 int * str float email tel phone  url  可以是正则表达式
 循环检查，如果第一个不通过就返回false 全部通过返回true
+
+关系验证:eq  比较相等，如:eq="password" 就表示和password的id相比较值
+
 主要是用:$("#form_add").jcheckform() 来验证
 用法示例:
 $("#btn_add").click(function(){
@@ -69,6 +72,8 @@ $("#btn_add").click(function(){
 				//验证大于等于
 				var bj=obj.attr("ngt");
 				if(bj!=undefined) return (v>=$("#"+bj).val())?true:false;
+				var bj=obj.attr("egt");
+				if(bj!=undefined) return (v>=$("#"+bj).val())?true:false;
 
 				//验证小于
 				var bj=obj.attr("lt");
@@ -76,6 +81,8 @@ $("#btn_add").click(function(){
 
 				//验证小于等于
 				var bj=obj.attr("nlt");
+				if(bj!=undefined) return (v<=$("#"+bj).val())?true:false;
+				var bj=obj.attr("elt");
 				if(bj!=undefined) return (v<=$("#"+bj).val())?true:false;
 
 
@@ -105,6 +112,11 @@ $("#btn_add").click(function(){
 				if(datatype.match(/^int/)){
 					if(!v.match(/^[\d]+$/)) if(!showtip(obj)) return false;
 				}
+
+				if(datatype.match(/^float/)){
+					if(!v.match(/^[\d]+[\d\.]*$/)) if(!showtip(obj)) return false;
+				}
+
 				if(datatype.match(/^email/)){
 					if(!v.match(/^[\w\-\.]+@[\w\-\.]+\.[\w]+$/)) if(!showtip(obj)) return false;
 				}
