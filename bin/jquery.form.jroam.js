@@ -58,7 +58,7 @@ $("#btn_add").click(function(){
 				var htm=obj.attr("errormsg");
 				obj.focus();
 				flag=false;
-				if(htm=="" || htm==undefined) htm=optionss["error"];
+				if(htm=="" || !htm) htm=optionss["error"];
 				alert(htm);
 				
 				return false;
@@ -69,7 +69,7 @@ $("#btn_add").click(function(){
 				var htm=obj.attr("errormsg-bj");
 				obj.focus();
 				flag=false;
-				if(htm=="" || htm==undefined) htm=optionss["errorbj"];
+				if(htm=="" || !htm) htm=optionss["errorbj"];
 				alert(htm);
 				return false;
 			}
@@ -187,7 +187,7 @@ $("#btn_add").click(function(){
 			}
 
 			var nz_str=function(v,v1,v2){
-				var flag1=false;
+					var flag1=false;
 					var flag2=false;
 
 					if(!v1) v1="0";
@@ -225,6 +225,7 @@ $("#btn_add").click(function(){
 					var newstr=str.replace(/^(\*|str)\[/,"").replace("]","");;
 					var v1=newstr.replace(/\-[\d]*$/,"");
 					var v2=newstr.replace(/^[\d]*\-/,"");
+					
 					return nz_str(v,v1,v2);
 				}
 
@@ -249,12 +250,12 @@ $("#btn_add").click(function(){
 				if(v==null) v=optionss["error"];
 				
 				//任意字符
-				if(datatype.match(/^\*/)){
-					if(v=="") return false;
-				}
-				if(datatype.match(/^str/)){
-					if(!v.match(/^[\w\W]+$/)) if(!showtip(obj)) return false;
-				}
+				//if(datatype.match(/^\*/)){
+					//if(v=="") return false;
+				//}
+				//if(datatype.match(/^str/)){
+					//if(!v.match(/^[\w\W]+$/)) if(!showtip(obj)) return false;
+				//}
 
 				if(datatype.match(/^int/)){
 					if(!v.match(/^[\-]*[\d]+$/)) if(!showtip(obj)) return false;
