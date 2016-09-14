@@ -1,4 +1,4 @@
-jCheckForm表单验证茶件
+jCheckForm表单验证插件
 ==========
 //jroam开发的一个表单验证jquery插件
 /**
