@@ -1,4 +1,4 @@
-//jroam开发的一个表单验证jquery插件
+//jroam开发的一个表单验证jquery插件,一行搞定验证
 /**
 需要验证的input必须设置datatype值   
  errormsg 验证不通过时显示的信息  
