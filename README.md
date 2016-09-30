@@ -12,6 +12,7 @@
 
 主要是用:$("#form_add").jcheckform() 来验证
 用法示例:
+```
 $("#btn_add").click(function(){
 			if($("#form_add").jcheckform()){
 				$("#form_add").submit();//检查通过就提交表单
@@ -19,5 +20,6 @@ $("#btn_add").click(function(){
 			return false;
 		})
 
+```
 
 */
