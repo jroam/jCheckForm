@@ -1,7 +1,7 @@
 ## jCheckForm表单验证插件
 ==========
 //jroam开发的一个表单验证jquery插件
-/**
+
 需要验证的input必须设置datatype值   errormsg 验证不通过时显示的信息  
  errormsg-bj 比较验证失败后显示的提示信息
 
@@ -21,5 +21,3 @@ $("#btn_add").click(function(){
 		})
 
 ```
-
-*/
