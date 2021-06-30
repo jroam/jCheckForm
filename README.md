@@ -13,7 +13,7 @@
 
 关系验证:eq  比较相等，如:eq="password" 就表示和password的id相比较值
 
-主要是用:$("#form_add").jcheckform() 来验证
+主要是用:$("#form_add").jcheckform() 来验证   
 用法示例:
 ```
 $("#btn_add").click(function(){
