@@ -1,3 +1,4 @@
+https://travis-ci.org/jroam/jCheckForm.svg?branch=master
 ## jCheckForm表单验证插件
 ==========
 //jroam开发的一个表单验证jquery插件
