@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/gogf/gf.svg?branch=master)](https://travis-ci.org/gogf/gf)
+[![Build Status](https://travis-ci.org/jroam/jCheckForm.svg?branch=master)](https://travis-ci.org/jroam/jCheckForm)
 
 
 ## jCheckForm表单验证插件
