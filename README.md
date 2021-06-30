@@ -1,4 +1,6 @@
-https://travis-ci.org/jroam/jCheckForm.svg?branch=master
+[![Build Status](https://travis-ci.com/gogf/gf.svg?branch=master)](https://travis-ci.org/gogf/gf)
+
+
 ## jCheckForm表单验证插件
 ==========
 //jroam开发的一个表单验证jquery插件
